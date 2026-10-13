@@ -1,0 +1,14 @@
+env:
+  name: "Pendulum-v1"
+  num_workers: 4
+mcts:
+  c_puct: 1.4
+  num_simulations: 30
+safety:
+  action_bounds: [-2.0, 2.0]
+dashboard:
+  port: 8501
+neo4j:
+  uri: "bolt://localhost:7687"
+  user: "neo4j"
+  password: "password"
